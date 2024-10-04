@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "dev-proj-1-jenkins-remote-state-bucket-7603"
-    key    = "devops-project-1/jenkins/terraform.tfstate"
+    bucket = ""                                             # S3 bucket name for remote state
+    key    = "devops-project-1/jenkins/terraform.tfstate"   # Path to store the state file in S3 bucket
     region = "eu-west-1"
   }
 }
